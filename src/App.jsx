@@ -76,8 +76,8 @@ function App() {
                           </div>
                           <div>
 
-                            {item.lc_discount === null || (item.lc_discount === item.lc_discount) ? "": <p className=" pr-4 line-through leading-none text-md text-left font-normal text-gray-500"><NumericFormat value={item.lc_price_srp} thousandSeparator="," displayType="text" />.-</p>}
-                            <p className="leading-normal text-2xl text-center font-bold text-red-600"><NumericFormat value={item.lc_discount} thousandSeparator="," displayType="text" />.-</p>
+                            {/* {item.lc_discount === null || (item.lc_discount === item.lc_price_srp) ? "": <p className=" pr-4 line-through leading-none text-md text-left font-normal text-gray-500"><NumericFormat value={item.lc_price_srp} thousandSeparator="," displayType="text" />.-</p>} */}
+                            <p className="leading-normal text-2xl text-center font-bold text-red-600"><NumericFormat value={item.lc_price_srp} thousandSeparator="," displayType="text" />.-</p>
                               
 
                             
