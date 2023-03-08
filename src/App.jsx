@@ -58,15 +58,16 @@ function App() {
                     <div className='relative bottom-9 left-9 text-white font-bold text-2xl uppercase'>LIQUID COOLING {group}</div>
                   </div>
 `
-                  <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-6">
+                  <div className="grid grid-cols-2 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-5">
                     {groups[group].map(item => (
                       <a key={item.lc_id} href={item.lc_href} target="_blank" className="group">
-                        <div className="aspect-w-2 aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-w-7 xl:aspect-h-8">
+                        <div className="aspect-w-2 aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-w-7 xl:aspect-h-8 bg-white shadow-md p-2">
                           <div className='h-20 sm:h-16'>
                             <p className="whitespace-nowrap text-lg sm:text-xl font-bold text-center text-black">{item.lc_brand}</p>
                             <p className="text-xs text-center text-red-600">{item.lc_model}</p>
                             <p className="text-xs text-center text-black">{item.lc_color}</p>
                           </div>
+                          
                           <div>
                             <img
                               src={item.lc_img}
