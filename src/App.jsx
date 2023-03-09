@@ -76,8 +76,8 @@ function App() {
                             />
                           </div>
                           <div className='flex justify-between items-baseline'>
-                            <div><p className="leading-normal text-2xl font-bold text-red-600"><NumericFormat value={item.lc_price_srp} thousandSeparator="," displayType="text" />.-</p></div>
-                            {item.lc_discount === null || (item.lc_discount === item.lc_price_srp) ? "": <div><p className="line-through leading-normal text-md font-normal text-gray-500"><NumericFormat value={item.lc_discount} thousandSeparator="," displayType="text" />.-</p></div>}
+                            <div><p className="leading-normal text-2xl font-bold text-red-600"><NumericFormat value={item.lc_discount} thousandSeparator="," displayType="text" />.-</p></div>
+                            {item.lc_discount === null || (item.lc_discount === item.lc_price_srp) ? "": <div><p className="line-through leading-normal text-md font-normal text-gray-500"><NumericFormat value={item.lc_price_srp} thousandSeparator="," displayType="text" />.-</p></div>}
                               
 
                             
